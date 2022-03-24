@@ -1,0 +1,216 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #242D52;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: white; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:76px 0px;
+}
+
+h1{
+    font-size: 0;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 28px;
+}
+header ul a{
+    font-weight: 500;
+}
+
+.contenedor-conMargen{  
+    width: 100%;
+    max-width: 1110px;
+}
+
+.boton-naranja{
+    display: inline-block;
+        padding: 12px 30px;
+        border-radius: 50px;
+        background-color: #F3603B;
+    color:white;
+    box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+}
+
+.row-h2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+
+.column {
+    flex: 1;
+}
+.estilos-h{
+    font-weight: 700px;    
+    color: #232C50; 
+
+}
+h2{
+    font-size: 3.5rem;
+
+}
+
+.column p{
+    padding: 1.75rem 0;
+    padding-right: 35%;
+}
+
+/*Clase que permite la imagen sea flexible*/
+.imagen-flexible{
+    width: 100%;
+    /*Al tener el heigth en auto, al achicarse se achica a la par*/
+    height: auto;
+}
+h3{
+    font-size: 2.25rem;
+}
+
+.row-h3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+.row-h3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+}
+
+.row-li-trucho{
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;  
+}
+.titulo-li-trucho{
+    display: flex;
+    align-items: center;
+}
+.elemento-numerico-li{
+    color: white;
+    padding: 10px 25px;
+    border-radius:50px;
+    background-color:#F3603B ;
+    font-weight: 700;
+}
+
+
+.p-li-trucho{
+    color:  #B3B2B7;
+    padding: 1rem 0rem 2rem 4.5rem !important;
+}
+
+h4{
+    padding-left:0.75rem ;
+}
+
+.testimonios{
+    text-align: center;
+}
+.testimonios h2{
+    font-size: 2.4rem;
+    padding-bottom: 4.68rem;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2.1rem;
+    gap: 2rem;
+}
+.card{
+    position: relative;
+    max-width: 445px;
+    background-color: #FAFAFA;
+
+}
+.card h5{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 3.5rem;
+    padding-bottom: 1.3rem;
+    color: #3F4868;
+}
+.card p{
+    color: #B9B9C1;
+    padding: 2.4rem 1.3rem;
+
+}
+
+
+.imagen-card{
+    padding: ;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    transform: translate(-50%,-50%);
+}
+
+.simplify{
+    display: flex;
+    justify-content: center;
+    background-color: #F3613C;
+    width: 100%;
+    margin-top: 12rem;
+}
+.simplify h2{
+
+    padding:4rem 0;
+    color: white;
+    font-size: 40px;
+}
+
+.simplify .contenedor-conMargen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-blanco{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: white;
+    color:#F3603B;
+    box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logos-footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
