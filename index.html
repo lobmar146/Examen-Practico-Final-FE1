@@ -25,8 +25,11 @@
             <img src="img/logo.svg" alt="logo de manage">
         </div>
         <!-- Menu de navegacion -->
-        <nav>
-            <ul>
+        <nav class="navegacion" >
+            <a href="#" class="toggle">
+                
+            </a>
+            <ul>    
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="">About us</a></li>
@@ -137,8 +140,10 @@
         <section class="simplify">
 
             <div class="contenedor-conMargen">
-                <h2>Simplify hoy your team words today.</h2>
-                <a class="boton-blanco">Get Started</a>
+                <div class="contenedor-simplify">
+                    <h2>Simplify hoy your team words today.</h2>
+                    <a class="boton-blanco">Get Started</a>
+                </div>
             </div>
         </section>
 
@@ -151,44 +156,58 @@
                 <div class="column-imagenes">
                     <img class="logo-footer"src="img/logo-blanco.svg" alt="logo de manage">
                         <div class="logos-redes">
-                            <img src="img/icon-facebook.svg" alt="logo de facebook">
-                            <img src="img/icon-youtube.svg" alt="logo de youtube">
-                            <img src="img/icon-twitter.svg" alt="logo de twitter">
-                            <img src="img/icon-pinterest.svg" alt="logo de pinterest">
-                            <img src="img/icon-instagram.svg" alt="logo de instragram">
+                            <a href=""><img src="img/icon-facebook.svg" alt="logo de facebook"></a>
+                            <a href=""><img src="img/icon-youtube.svg" alt="logo de youtube"></a>
+                            <a href=""><img src="img/icon-twitter.svg" alt="logo de twitter"></a>
+                            <a href=""><img src="img/icon-pinterest.svg" alt="logo de pinterest"></a>
+                            <a href=""><img src="img/icon-instagram.svg" alt="logo de instragram"></a>
                         </div>
                 </div>
-                <div class="column-nav1">
-                    <nav>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">About Us</a></li>
-                        </ul>
-                    </nav>
+                <div class="contenedor-navs">
+                    <div class="column-nav1">
+                        <nav>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Products</a></li>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column-nav2">
+                        <nav>
+                            <ul>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-
-                <div class="column-nav2">
-                    <nav>
-                        <ul>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Community</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-
-                        </ul>
-                    </nav>
-                </div>
-                <div class="fila-form boto">
-                    <form action="" method="post"></form>
-                        <input type="text" name="enviar-go" id="enviar-go" placeholder="Update in your inbox...">
+                <div class="fila-form">
+                    <form action="#" method="post">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="Update in your inbox...">
                         <button class="boton-naranja" type="submit">Go</button>
+                    </form>
                 </div> 
                 <p>Copyright 2020. All Rights Reserved</p>
             </div>
             
         </div>
     </footer>
+
+    <!-- Menu Hamburguesa -->
+    <script>
+        const toggle = document.querySelector('.toggle')
+        console.log(toggle)
+        const navul = document.querySelector('nav.navegacion ul')
+        console.log(navul)
+        toggle.addEventListener('click', () => {
+            navul.classList.toggle('open')
+            toggle.classList.toggle('open')
+        })
+    </script>
 </body>
 
 </html>

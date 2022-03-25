@@ -20,8 +20,9 @@ body{
 }
 
 header{
-
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     margin:76px 0px;
 }
 
@@ -38,11 +39,16 @@ header ul a{
     font-weight: 500;
 }
 
+header ul a:hover{
+    color: #afb0b4;
+}
+
 .contenedor-conMargen{  
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 1110px;
+    padding: 0px 2rem;
 }
 
 .boton-naranja{
@@ -52,6 +58,12 @@ header ul a{
     background-color: #F3603B;
     color:white;
     box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+}
+
+.boton-naranja:hover{
+    background-color:#f98f75 ;
+    color: #fff4e2;
+
 }
 
 main{
@@ -188,6 +200,12 @@ h4{
     width: 100%;
     margin-top: 12rem;
 }
+.contenedor-simplify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .simplify h2{
 
     padding:4rem 0;
@@ -208,6 +226,10 @@ h4{
     background-color: white;
     color:#F3603B;
     box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+}
+
+.boton-blanco:hover{
+    color:#ffd1cd;
 }
 
 footer{
@@ -242,6 +264,16 @@ footer a{
     font-weight: 500;
 }
 
+
+footer a:hover{
+    fill: #F3613C;
+    filter: invert(51%) sepia(79%) saturate(3647%) hue-rotate(340deg) brightness(105%) contrast(91%);   
+}
+
+footer label{
+    font-size: 0;
+}
+
 footer p{
     color: white;
     width: 100%;
@@ -263,6 +295,7 @@ footer li{
     gap:13px;
 }
 footer input{
+
 font-family: 'Be Vietnam Pro', sans-serif; 
 padding: 10px 12.5px;
 border-radius: 50px;
@@ -273,3 +306,142 @@ footer button{
     border: none;
 }
 
+.contenedor-navs{
+    display: flex;
+    gap: 4rem;
+    
+}
+
+
+.toggle{
+    display: none;
+    background-image: url(../img/icon-hamburger.svg);
+    height: 18px;
+    width: 25px;
+}
+
+@media(max-width:832px){
+    body{
+        font-size: 13px;
+    }
+    .row-h2{
+        flex-direction: column-reverse;   
+    }
+
+    .column{
+        text-align: center;
+    }
+    .column p{
+        padding:10px 0px;
+    }
+
+    .row-h3{
+        flex-direction: column;
+    }
+    
+    .p-li-trucho{
+        text-align: left;
+        padding: 15px 10px !important;
+    }
+    
+    .titulo-li-trucho{
+        background-color:rgb(255,239,234);
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards .card:nth-child(1), .cards .card:nth-child(3){
+        display: none;
+    }
+
+    .contenedor-simplify{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-blanco{
+        margin-bottom: 40px;
+    }
+
+    .row-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-navs{
+        order: -1;
+        padding-bottom: 2rem     ;
+        gap:2rem;
+    }
+
+    .fila-form{
+        order:-2;
+        padding-bottom: 2rem;
+    }
+
+    .column-imagenes{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+    .logo-footer{
+        padding-bottom: 2.5rem;
+    }
+    .logos-redes{
+        padding-bottom: 2rem;
+        gap:2rem;
+    }
+    footer p{
+        text-align: center;
+    }
+
+    footer .logos-redes img{
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Clases menu hamburguesa */
+    .toggle{
+        position: absolute;
+        left:90%;
+        top:0px;
+        display: block;
+    }
+        
+    .navegacion ul {
+        display: none;
+    }
+    
+    .navegacion ul.open {
+        display: flex;
+    }
+
+    header .boton-naranja{
+        display: none;
+    }
+
+        
+    header.contenedor-conMargen{
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .navegacion{
+        width: 100%;
+}
+.navegacion ul.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+  }
+
+  a.toggle.open{
+      background-image:url(../img/icon-close.svg);
+      height: 21px;
+      width: 21px;
+  }
+}
